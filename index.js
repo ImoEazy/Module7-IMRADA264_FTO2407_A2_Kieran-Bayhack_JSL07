@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
       certificateContent.innerHTML = `
       
       <h3>${studentName}</h3>
+      <p>${personalMessage}</p>
+      <h4>${courseName}</4>
     `;
     
       //  Display the modal
@@ -40,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('block', function () {
+    closeModal.addEventListener('click' , function () {
+      modal.style.display =
+    })
       
     });
   });
