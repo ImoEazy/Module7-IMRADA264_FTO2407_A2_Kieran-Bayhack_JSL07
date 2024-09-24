@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
-      const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
+      const courseName = courseNameInput ? courseNameInput.value : "a course"; // Go back to "a course" if no input
   
       if (studentName.trim() === '' || personalMessage.trim() === '') {
         alert('Please fill in all fields');
@@ -26,10 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Generate certificate content dynamically
       certificateContent.innerHTML = `
-      
-      <h3>${studentName}</h3>
-      <p>${personalMessage}</p>
-      <h4>${courseName}</4>
+       <h2>Certifiacate of excellence</h2>
+       <p> achievment by</p>
+       <h3>${studentName}</h3>
+       <p> indicating course completion</p>
+       <p>${personalMessage}</p>
+       <h4>${courseName}</h4>
+       <img src = "logo.png" alt = "codespace logo"/>
     `;
     
       //  Display the modal
@@ -43,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
   
     //  🚨 Close the modal when the close button is clicked
     closeModal.addEventListener('click' , function () {
-      modal.style.display =
-    })
+      modal.style.display = 'none';
+    });
       
     });
-  });
+  
   
