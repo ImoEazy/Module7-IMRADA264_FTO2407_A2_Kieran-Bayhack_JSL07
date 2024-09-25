@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
        <p> indicating course completion</p>
        <p>${personalMessage}</p> 
        <h4>${courseName}</h4>
+       <img src="./logo.png" alt=" " style="margin-top: 15px; max-height: 100px;">
       
           
      `;
