@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const courseName = courseNameInput ? courseNameInput.value : "a course"; // Go back to "a course" if no input
   
       if (studentName.trim() === '' || personalMessage.trim() === '') {
-        alert('Please fill in all fields');
+        alert('Please fill in all fields'); 
         return;
       }
   
@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
        <p> achievment by</p>
        <h3>${studentName}</h3>
        <p> indicating course completion</p>
-       <p>${personalMessage}</p>
+       <p>${personalMessage}</p> 
        <h4>${courseName}</h4>
-       <img src = "logo.png" alt = "codespace logo"/>
-    `;
+      
+          
+     `;
+     // img src="./logo.png">//
     
       //  Display the modal
       modal.style.display = 'block';
